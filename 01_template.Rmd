@@ -16,7 +16,7 @@ library(lubridate)
 
 # `r paste0(episode$production_code, ": '", episode$title, "'")`
 
-## Episode detail
+### Episode detail
 
 ```{r}
 episode %>% 
@@ -26,12 +26,10 @@ episode %>%
     `Number in series` = number_in_series,
     `Original air date` = original_air_date
   ) %>% 
-  # t() %>% 
-  # as_data_frame() %>% 
   kable()
 ```
 
-## Production
+### Production
 
 ```{r}
 episode %>% 
@@ -39,12 +37,10 @@ episode %>%
     Director = director,
     Writer = writer
   ) %>% 
-  # t() %>% 
-  # as_data_frame() %>% 
   kable()
 ```
 
-# Blurb
+### Blurb
 
 > `r episode$blurb`
 

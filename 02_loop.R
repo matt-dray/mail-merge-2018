@@ -1,4 +1,6 @@
 
+library(rmarkdown)
+
 # Read data ---------------------------------------------------------------
 
 data <- read.csv(
@@ -20,7 +22,7 @@ for (i in data$production_code){
   
   render(
     "01_template.rmd",  # where to source the template from
-    output_file = paste0("episode_", i, ".docx"),  # name the output
+    output_file = paste0("episode_", i, ".html"),  # name the output
     output_dir = "output"  # folder to put the output file
   )
 }
