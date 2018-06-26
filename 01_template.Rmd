@@ -1,0 +1,51 @@
+---
+title: "Dawson's Creek Episode Guide"
+author: "Matt Dray"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+library(tibble)
+library(knitr)
+library(lubridate)
+```
+
+***
+
+# `r paste0(episode$production_code, ": '", episode$title, "'")`
+
+## Episode detail
+
+```{r}
+episode %>% 
+  select(
+    Season = season,
+    `Number in season` = number_in_season,
+    `Number in series` = number_in_series,
+    `Original air date` = original_air_date
+  ) %>% 
+  # t() %>% 
+  # as_data_frame() %>% 
+  kable()
+```
+
+## Production
+
+```{r}
+episode %>% 
+  select(
+    Director = director,
+    Writer = writer
+  ) %>% 
+  # t() %>% 
+  # as_data_frame() %>% 
+  kable()
+```
+
+# Blurb
+
+> `r episode$blurb`
+
+*All information from [Wikipedia](https://en.wikipedia.org/wiki/List_of_Dawson%27s_Creek_episodes)*
