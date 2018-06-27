@@ -34,7 +34,7 @@ for (i in data$production_code){  # for each unique episode
   
   render(
     input = "01_template.rmd",  # path to the template
-    output_file = paste0("episode_", i, ".html"),  # name the output
+    output_file = paste0("episode_", i, ".docx"),  # name the output
     output_dir = "output"  # folder in which to put the output file
   )
 
