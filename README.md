@@ -2,12 +2,18 @@
 
 ## TL;DR
 
-You need to populate a .docx template hundreds of times. Use R, R Markdown, a style document and `knitr`.
+You need to populate a .docx (or .html or .pdf) template hundreds of times. Automate this with R, R Markdown, a style document and `knitr`.
 
 ## Purpose
 
-To demonstrate:
+With **beginner R users from my department in mind**, this repository contains files that:
 
-* creating an R Markdown template to be filled with 
-* filling it with detail about each member of X (separate rows of a dataframe) with a loop
-* rendering it to Word (.docx) format according to style template
+* create an R Markdown template to be filled with data
+* use a loop to fill the template with data for each row of your tidy dataset in turn
+* render the template to .docx format with reference to a style template
+
+The repository will be referenced in an upcoming post on [rostrum.blog](https://rostrum.blog).
+
+## Disclaimer
+
+There's more than one way to do this. Also I'm not claiming that .docx format is great.
