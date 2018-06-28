@@ -3,7 +3,7 @@ title: "Dawson's Creek Episode Guide"
 author: "Matt Dray"
 output:
   word_document:
-    reference_docx: my_style.docx
+    reference_docx: style/my_style.docx
 ---
 
 ```{r setup, include=FALSE}
