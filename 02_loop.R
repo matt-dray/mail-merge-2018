@@ -10,10 +10,8 @@
 # Read in the CSV data as a dataframe object
 # Each row is an episode of the first season of Dawson's Creek
 
-data <- read.csv(
-  file = "data/dawsons-creek-season-1.csv",  # path to file
-  stringsAsFactors = FALSE  # read text columns as strings
-)
+library(readr)  # for read_csv()
+data <- read_csv(file = "data/dawsons-creek-season-1.csv")  # path to file
 
 
 # Loop --------------------------------------------------------------------
